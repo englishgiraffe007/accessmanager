@@ -1,0 +1,20 @@
+h3 {
+    margin-top: 0px;
+} 
+h4 {
+    text-decoration: underline;
+}
+.toggle_container {
+    padding-top: 5px;
+}
+.links1 {
+    text-decoration: none;
+    color: white;
+}
+.ursj {
+    text-decoration: none;
+    color: #777;
+}
+.emailcontact, .phonecontact {
+    list-style: none;
+}

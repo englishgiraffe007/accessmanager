@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AccessManager</title>
+        <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'main.css' %}" rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{% static "mainapp-jquery.js" %}"></script>
+    </head>
+    <body>
+        <div class='navbar navbar-default navbar-static-top'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<a href='http://127.0.0.1:8000/' class='navbar-brand'>AccessManager</a>
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+						<span class='sr-only'>Toggle navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+				</div>
+				<ul class='nav nav-pills navbar-right collapse navbar-collapse'>
+					<li><a class="ursj" href='officemanager'>OfficeManager</a></li>
+					<li><a class="ursj" href='customermanager'>CustomerManager</a></li>
+                    <li><a class="ursj" href='help'>Help</a></li>
+					<li><a class="ursj" href='contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+        <div class='container'>
+            <div class='row col-xs-8 col-xs-offset-2 text-center well'>
+                <h3 class='lead'>Welcome to AccessManager by McLean Brown!</h3>
+                <p>Are you a first time user, or are you a returning business?</p>
+                <button class='btn btn-default btn-primary'><a class='links1' href="signup">Sign Up</a></button>
+                <button class='btn btn-default btn-primary'><a class='links1' href="login">Log In</a></button>
+            </div>
+            <div class='row col-xs-12 text-center'>
+                <h2 class='lead'>Not sure what this program does?</h2>
+                <p>The AccessManager application has two main programs that it runs. There is the officeManager program, and there is the customerManager program. Click on the buttons below to learn more about each program.</p>
+            </div>
+            <div class='row col-xs-12 text-center'>
+                <h2 class='lead'>Still need some help?</h2>
+                <button class='btn btn-default btn-success'><a class='links1' href='mailto:10024164@richland2.org?subject=AccessManager'>Email me!</a></button>
+            </div>
+            <div class='row text-center'>
+                <div class='col-xs-6'>
+                    <h4>officeManager</h4>
+                    <button class='btn btn-default btn-info hiddeninfo'>Learn More</button>
+                    <p class='toggle_container'>The officeManager function allows you to do several things to keep track of your employees and to see what happens day to day throughout your company. It allows you to add emplyees to your company, remove them, edit their schedule, and print a list of all employees' schedules. If you want to, you can also keep track of employee attendance, and see who was late or unaccounted for each day. Another bonus that you can add into the program is e-mail functionality. This function will send an automated e-mail out to all of your employees on a dat and time that you choose. This e-mail will tell them their schedule for the week. Sign up to get started today!</p>
+                </div>
+                <div class='col-xs-6'>
+                    <h4>customerManager</h4>
+                    <button class='btn btn-default btn-info hiddeninfo'>Learn More</button>
+                    <p class='toggle_container'>The customerManager function has different ways to keep track of your customers, keep info on them, and reach out to them to send coupons and discounts to your most loyal customers. You can add customers into the system, remove them from the system, edit the info that you have about them, and print a list of customers and info. This allows your company to keep track of your most frequent customers. A strong business-customer relationship is very important in today's society. If you use our customerManager program, all you have to do is set up the basic info, and the program will do the rest.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

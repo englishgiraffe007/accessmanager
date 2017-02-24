@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'main.css' %}" rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{% static "mainapp-jquery.js" %}"></script>
+    </head>
+    <body>
+        <div class='navbar navbar-default navbar-static-top'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<a href='http://127.0.0.1:8000/' class='navbar-brand'>AccessManager</a>
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+						<span class='sr-only'>Toggle navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+				</div>
+				<ul class='nav nav-pills navbar-right collapse navbar-collapse'>
+					<li><a class="ursj" href='officemanager'>OfficeManager</a></li>
+					<li><a class="ursj" href='customermanager'>CustomerManager</a></li>
+                    <li><a class="ursj" href='help'>Help</a></li>
+					<li><a class="ursj" href='contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+        <h1>Sign up for AccessManager</h1>
+    </body>
+</html>

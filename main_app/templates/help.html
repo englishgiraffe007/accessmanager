@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Help</title>
+        <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'main.css' %}" rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="{% static "mainapp-jquery.js" %}"></script>
+    </head>
+    <body>
+        <div class='navbar navbar-default navbar-static-top'>
+			<div class='container'>
+				<div class='navbar-header'>
+					<a href='http://127.0.0.1:8000/' class='navbar-brand'>AccessManager</a>
+					<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+						<span class='sr-only'>Toggle navigation</span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+				</div>
+				<ul class='nav nav-pills navbar-right collapse navbar-collapse'>
+					<li><a class="ursj" href='officemanager'>OfficeManager</a></li>
+					<li><a class="ursj" href='customermanager'>CustomerManager</a></li>
+                    <li><a class="ursj" href='help'>Help</a></li>
+					<li><a class="ursj" href='contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+        <div class='row text-center'>
+            <h3 class='lead'>Help guide for OfficeManager</h3>
+            <p>In the OfficeManager program you can do four main functions:</p>
+        </div>
+        <div class='row'>
+            <ol class='col-xs-8 col-xs-offset-2'>
+                <li>Type 'add' to add an employee to your list of employees. The preexisting schedule is always 9am - 5pm, Monday-Friday. You can change this later with the 'edit' function.</li>
+                <li>Type 'remove' to remove an employee and their schedule from the list.</li>
+                <li>Type 'edit' to edit the schedule of an employee. Here you can change the days they work, and the times that they work for each day.</li>
+                <li>Type 'print' to see your full list of employees and their corresponding schedules.</li>
+            </ol>
+        </div>
+        <div class='row text-center'>
+            <h3 class='lead'>Help guide for CustomerManager</h3>
+            <p>In the CustomerManager program you can do four main functions:</p>
+        </div>
+        <div class='row'>
+            <ol class='col-xs-8 col-xs-offset-2'>
+                <li>Type 'add' to add a customer to your list of employees. By entering a customer into the system, you can keep their contact information, keep track of when they do business with you, and keep info about what they do with your business.</li>
+                <li>Type 'edit' to edit the info of a customer.</li>
+                <li>Type 'remove' to remove a customer and any info about them from the list.</li>
+                <li>Type 'print' to see a full list of customers. You can then enter a customer's' name to see their information.</li>
+            </ol>
+        </div>
+        <div class='row col-xs-12 text-center'>
+            <h2 class='lead'>Still need some help?</h2>
+            <button class='btn btn-default btn-success'><a class='links1' href='mailto:10024164@richland2.org?subject=AccessManager'>Email me!</a></button>
+        </div>
+    </body>
+</html>
